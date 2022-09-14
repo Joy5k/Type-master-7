@@ -6,13 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!-- css frameWork link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="bg-slate-800">
 
-    <h1>Questions</h1>
-    
+    <h1 class="text-center font-semibold text-5xl m-16 text-orange-300">Questions</h1>
+    <!-- first Question answer -->
+
+   <div class="text-center">
+    <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">
+        <a class=" w-7/12 inline-block px-6 py-2.5 bg-blue-800 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#firstCollapseExample" role="button" aria-expanded="false" aria-controls="firstCollapseExample">
+         What is difference between local storage and session storage ?
+        </a>
+      </p>
+      <div class="collapse w-6/12 mx-auto" id="firstCollapseExample">
+        <div class="block p-6 rounded-lg shadow-lg bg-white">
+            sessionStorage is similar to localStorage :- The difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.
+        </div>
+      </div>
+   </div>
+   <!-- second -->
+   <div class="text-center">
+    <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">
+        <a class="w-7/12 inline-block px-6 py-2.5 bg-blue-800 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#secondCollapseExample" role="button" aria-expanded="false" aria-controls="secondCollapseExample">
+          What's the difference between the global scope and blockScope ?
+        </a>
+      </p>
+      <div class="collapse w-6/12 mx-auto" id="secondCollapseExample">
+        <div class="block p-6 rounded-lg shadow-lg bg-white">
+            Function scoped variables: A function scoped variable means that the variable defined within a function will not accessible from outside the function. Block scoped variables: A block scoped variable means that the variable defined within a block will not be accessible from outside the block.
+        </div>
+      </div>
+   </div>
+   <!-- third -->
+   <div class="text-center">
+    <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">
+        <a class="w-7/12 inline-block px-6 py-2.5 bg-blue-800 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#thirdCollapseExample" role="button" aria-expanded="false" aria-controls="thirdCollapseExample">
+          How does work event loop?
+        </a>
+      </p>
+      <div class="collapse w-6/12 mx-auto" id="thirdCollapseExample">
+        <div class="block p-6 rounded-lg shadow-lg bg-white">
+            The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+        </div>
+      </div>
+   </div>
+   <!-- fourth -->
+   <div class="text-center">
+    <p class="md:space-x-1 space-y-1 md:space-y-0 mb-4">
+        <a class="w-7/12 inline-block px-6 py-2.5 bg-blue-800 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+         Details of Undefined.
+        </a>
+      </p>
+      <div class="collapse w-6/12 mx-auto" id="collapseExample">
+        <div class="block p-6 rounded-lg shadow-lg bg-white">
+         1.The undefined property indicates that a variable has not been assigned a value, or not declared at all.
+         2. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned .
+         3.	It is an ECMAScript1 (ES1) feature.
+
+        </div>
+      </div>
+   </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>

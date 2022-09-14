@@ -80,6 +80,10 @@ body {
   color: white;
   margin: 10px 0;
 }
+a{
+  color: azure;
+  text-decoration: none;
+}
 
 .green {
   color: #9dffad;
