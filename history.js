@@ -1,7 +1,6 @@
 const histories = document.getElementById("histories");
 
 function addHistory(questionText, timeTaken, errorCount) {
-  console.log(decimalTime,'decimal');
   const newRow = document.createElement("div");
   newRow.classList.add("card");
 
@@ -27,7 +26,6 @@ function displayHistory() {
   const previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
 
   previousTests.forEach((test) => {
-    console.log(test.timeTaken,'what is it');
     const newRow = document.createElement("div");
     newRow.classList.add("card");
 
